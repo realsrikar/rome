@@ -179,16 +179,27 @@ nav ul {
 
 .head {
   height: 800px;
-  background-color: blue; }
+  background-color: #3F51B5; }
 
 .body1 {
   height: 500px;
-  background-color: yellow; }
+  background-color: #FBC02D; }
 
 .body2 {
   height: 400px;
-  background-color: green; }
+  background-color: #4CAF50; }
 
 .footer {
   height: 800px;
-  background-color: black; }
+  background-color: #212121; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+nav a:hover {
+  color: #d9d9d9; }
+
+.head h1 {
+  margin: 0;
+  text-align: center; }

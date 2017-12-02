@@ -148,22 +148,47 @@ nav ul {
   list-style: none;
 }
 
+// colors are taken from https://material.io/guidelines/style/color.html
+// anything following a dollar $ is a sass variable
+$blue:   #3F51B5;
+$yellow: #FBC02D;
+$green:  #4CAF50;
+$black:  #212121;
+
 .head {
   height: 800px;
-  background-color: blue;
+  background-color: $blue; // anything following a dollar $ is a sass variable
 }
 
 .body1 {
   height: 500px;
-  background-color: yellow;
+  background-color: $yellow;
 }
 
 .body2 {
   height: 400px;
-  background-color: green;
+  background-color: $green;
 }
 
 .footer {
   height: 800px;
-  background-color: black;
+  background-color: $black;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: darken(#fff, 15%); // darken is a sass function
+}
+
+
+.head {
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
 }
