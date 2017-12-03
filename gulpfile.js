@@ -1,6 +1,6 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const prefix = require('gulp-autoprefixer');
+const gulp        = require('gulp');
+const sass        = require('gulp-sass');
+const prefix      = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
@@ -15,7 +15,7 @@ gulp.task('watch', function() {
     browserSync.init({
         server: {
             baseDir: "./"
-        }
+        },
     });
 
     gulp.watch("sass/*", ['sass']);

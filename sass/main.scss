@@ -8,15 +8,16 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Lato", sans-serif;
 }
 
 body {
-  background: url("https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=067f0b097deff88a789e125210406ffe") center center no-repeat;
+  background: url("../img/body-bg.jpeg") center center no-repeat;
   background-size: cover;
   color: #fff;
-  font-family: "Lato", sans-serif;
   font-size: 2.4rem;
-  height: 100vh;
+  height: 100vh; // this is a problem. Because of this, all other content is technically "overflow". changing height to min-height fixes it but then background-image doesn't work as expected.
+  // overflow: hidden;
   padding: 0;
   margin: 0;
 }
