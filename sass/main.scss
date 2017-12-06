@@ -193,3 +193,63 @@ nav a:hover {
     text-align: center;
   }
 }
+
+
+// Nav on desktop
+
+@media (min-width: 900px) {
+
+  .spacer {
+    height: 100px;
+  }
+
+  .navigation-menu {
+    background-color: #000;
+    top: 0;
+    transform: initial;
+    z-index: 100;
+    height:100px;
+    width: 100vw;
+
+    &::before {
+      content: initial;
+    }
+
+  }
+  .navigation-menu__toggle.js-nav-menu-toggle {
+    display: none;
+  }
+
+  .menu-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+
+    .menu-list__item {
+      transition: all ease-in-out 200ms;
+      color: #fff;
+      opacity: 1;
+      margin: 0;
+
+      &, a {
+        height: 100%;
+        width: 100%;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: unset;
+        transition: none;
+      }
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+}

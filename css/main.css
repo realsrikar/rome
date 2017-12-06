@@ -203,3 +203,53 @@ nav a:hover {
 .head h1 {
   margin: 0;
   text-align: center; }
+
+@media (min-width: 900px) {
+  .spacer {
+    height: 100px; }
+  .navigation-menu {
+    background-color: #000;
+    top: 0;
+    -webkit-transform: initial;
+            transform: initial;
+    z-index: 100;
+    height: 100px;
+    width: 100vw; }
+    .navigation-menu::before {
+      content: initial; }
+  .navigation-menu__toggle.js-nav-menu-toggle {
+    display: none; }
+  .menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0;
+    height: 100%;
+    margin: 0; }
+    .menu-list .menu-list__item {
+      -webkit-transition: all ease-in-out 200ms;
+      transition: all ease-in-out 200ms;
+      color: #fff;
+      opacity: 1;
+      margin: 0; }
+      .menu-list .menu-list__item, .menu-list .menu-list__item a {
+        height: 100%;
+        width: 100%; }
+      .menu-list .menu-list__item a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        color: unset;
+        -webkit-transition: none;
+        transition: none; }
+      .menu-list .menu-list__item:hover {
+        background-color: #fff;
+        color: #000; } }
