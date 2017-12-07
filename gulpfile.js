@@ -2,11 +2,14 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const prefix = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
+const maps = require('gulp-sourcemaps');
 
 gulp.task('sass', function() {
   gulp.src('sass/*')
+    .pipe(maps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix())
+    .pipe(maps.write())
     .pipe(gulp.dest('css/'))
     .pipe(browserSync.stream());
 });

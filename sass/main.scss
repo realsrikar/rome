@@ -186,8 +186,33 @@ a {
   text-decoration: none;
 }
 
-nav a:hover {
-  color: darken(#fff, 15%); // darken is a sass function
+
+
+
+$nav-link-color: darken(#fff, 30%);
+nav {
+  a {
+    display: inline-block;
+    position: relative;
+    &:hover {
+      color: $nav-link-color; // darken is a sass function
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 0;
+      background-color: $nav-link-color;
+    }
+  }
+}
+
+a {
+
 }
 
 
@@ -253,6 +278,31 @@ nav a:hover {
       &:hover {
         background-color: #fff;
         color: #000;
+      }
+    }
+  }
+
+  nav {
+    a {
+      display: inline-block;
+      &:hover {
+        color: $nav-link-color; // darken is a sass function
+        &::after {
+          transition-duration: 5s;
+          width: 60%;
+          max-width: 6em;
+        }
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        height: .2em;
+        bottom: .5em;
+        border-radius: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $nav-link-color;
       }
     }
   }
