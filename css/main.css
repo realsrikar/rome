@@ -3,7 +3,9 @@
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out; }
 
 html {
   font-size: 62.5%;
@@ -205,7 +207,7 @@ nav a:hover {
   text-align: center; }
 
 @media (min-width: 900px) {
-  .spacer {
+  .nav.spacer {
     height: 100px; }
   .navigation-menu {
     background-color: #000;

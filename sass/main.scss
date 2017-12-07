@@ -4,6 +4,9 @@
 *::after,
 *::before {
   box-sizing: border-box;
+
+  // !!! ONLY FOR DEVELOPEMENT
+  transition: all 200ms ease-out;
 }
 
 html {
@@ -161,6 +164,7 @@ $black:  #212121;
   background-color: $blue; // anything following a dollar $ is a sass variable
 }
 
+
 .body1 {
   height: 500px;
   background-color: $yellow;
@@ -199,7 +203,7 @@ nav a:hover {
 
 @media (min-width: 900px) {
 
-  .spacer {
+  .nav.spacer {
     height: 100px;
   }
 
