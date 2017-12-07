@@ -4,9 +4,6 @@
 *::after,
 *::before {
   box-sizing: border-box;
-
-  // !!! ONLY FOR DEVELOPEMENT
-  transition: all 200ms ease-out;
 }
 
 html {
@@ -228,8 +225,8 @@ a {
 
 @media (min-width: 900px) {
 
-  .nav.spacer {
-    height: 100px;
+  nav + * {
+    margin-top: 100px;
   }
 
   .navigation-menu {
@@ -288,7 +285,7 @@ a {
       &:hover {
         color: $nav-link-color; // darken is a sass function
         &::after {
-          transition-duration: 5s;
+          transition-duration: 400ms;
           width: 60%;
           max-width: 6em;
         }
