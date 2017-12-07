@@ -9,7 +9,7 @@ gulp.task('sass', function() {
     .pipe(maps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix())
-    .pipe(maps.write())
+    .pipe(maps.write('./'))
     .pipe(gulp.dest('css/'))
     .pipe(browserSync.stream());
 });
