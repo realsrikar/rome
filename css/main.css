@@ -80,52 +80,52 @@ body {
   opacity: 1; }
 
 .navigation-menu--open .menu-list__item:nth-child(1) {
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s; }
+  -webkit-transition-delay: 0.33s;
+          transition-delay: 0.33s; }
 
 .navigation-menu--open .menu-list__item:nth-child(2) {
-  -webkit-transition-delay: 1.25s;
-          transition-delay: 1.25s; }
+  -webkit-transition-delay: 0.58s;
+          transition-delay: 0.58s; }
 
 .navigation-menu--open .menu-list__item:nth-child(3) {
-  -webkit-transition-delay: 1.5s;
-          transition-delay: 1.5s; }
+  -webkit-transition-delay: 0.83s;
+          transition-delay: 0.83s; }
 
 .navigation-menu--open .menu-list__item:nth-child(4) {
-  -webkit-transition-delay: 1.75s;
-          transition-delay: 1.75s; }
+  -webkit-transition-delay: 1.08s;
+          transition-delay: 1.08s; }
 
 .navigation-menu--open .menu-list__item:nth-child(5) {
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s; }
+  -webkit-transition-delay: 1.33s;
+          transition-delay: 1.33s; }
 
 .navigation-menu--open .menu-list__item:nth-child(6) {
-  -webkit-transition-delay: 2.25s;
-          transition-delay: 2.25s; }
+  -webkit-transition-delay: 1.58s;
+          transition-delay: 1.58s; }
 
 .navigation-menu--open .menu-list__item:nth-child(7) {
-  -webkit-transition-delay: 2.5s;
-          transition-delay: 2.5s; }
+  -webkit-transition-delay: 1.83s;
+          transition-delay: 1.83s; }
 
 .navigation-menu--open .menu-list__item:nth-child(8) {
-  -webkit-transition-delay: 2.75s;
-          transition-delay: 2.75s; }
+  -webkit-transition-delay: 2.08s;
+          transition-delay: 2.08s; }
 
 .navigation-menu--open .menu-list__item:nth-child(9) {
-  -webkit-transition-delay: 3s;
-          transition-delay: 3s; }
+  -webkit-transition-delay: 2.33s;
+          transition-delay: 2.33s; }
 
 .navigation-menu--open .menu-list__item:nth-child(10) {
-  -webkit-transition-delay: 3.25s;
-          transition-delay: 3.25s; }
+  -webkit-transition-delay: 2.58s;
+          transition-delay: 2.58s; }
 
 .navigation-menu--open .menu-list__item:nth-child(11) {
-  -webkit-transition-delay: 3.5s;
-          transition-delay: 3.5s; }
+  -webkit-transition-delay: 2.83s;
+          transition-delay: 2.83s; }
 
 .navigation-menu--open .menu-list__item:nth-child(12) {
-  -webkit-transition-delay: 3.75s;
-          transition-delay: 3.75s; }
+  -webkit-transition-delay: 3.08s;
+          transition-delay: 3.08s; }
 
 .navigation-menu__toggle {
   cursor: pointer;
