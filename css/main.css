@@ -199,7 +199,9 @@ a {
 
 nav a {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  -webkit-transition: all ease-out 200ms;
+  transition: all ease-out 200ms; }
   nav a:hover {
     color: #b3b3b3; }
     nav a:hover::after {
@@ -207,6 +209,8 @@ nav a {
   nav a:after {
     content: '';
     display: block;
+    -webkit-transition: all ease-out 200ms;
+    transition: all ease-out 200ms;
     height: 2px;
     width: 0;
     background-color: #b3b3b3; }

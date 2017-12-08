@@ -191,6 +191,7 @@ nav {
   a {
     display: inline-block;
     position: relative;
+    transition: all ease-out 200ms;
     &:hover {
       color: $nav-link-color; // darken is a sass function
       &::after {
@@ -201,6 +202,7 @@ nav {
     &:after {
       content: '';
       display: block;
+      transition: all ease-out 200ms;
       height: 2px;
       width: 0;
       background-color: $nav-link-color;
