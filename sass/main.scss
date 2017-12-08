@@ -84,7 +84,7 @@ body {
 }
 @for $i from 1 through 12 {
   .navigation-menu--open .menu-list__item:nth-child(#{$i}) {
-    transition-delay: .33s + 0.25 * ($i - 1);
+  transition-delay: .33s + 0.25 * ($i - 1);
   }
 }
 
