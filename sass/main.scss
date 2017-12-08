@@ -124,6 +124,9 @@ body {
   transition: opacity 0.5s 0.5s;
 }
 @media only screen and (max-width: 700px) {
+  .head h1 {
+    padding-top: 2em;
+  }
   .navigation-menu {
     min-width: 240px;
     width: 80%;
@@ -135,7 +138,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .navigation-menu {
-    background-color: #4E567E;
+    background-color: #111;
     min-width: 240px;
     width: 80%;
   }
@@ -235,6 +238,7 @@ a {
     background-color: #000;
     top: 0;
     transform: initial;
+    transition: none;
     z-index: 100;
     height:100px;
     width: 100vw;
