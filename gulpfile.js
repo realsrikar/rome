@@ -5,7 +5,7 @@ const browserSync = require('browser-sync').create();
 const maps = require('gulp-sourcemaps');
 
 gulp.task('sass', function() {
-  gulp.src('sass/*')
+  return gulp.src('sass/*')
     .pipe(maps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix())
