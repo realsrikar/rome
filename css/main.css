@@ -204,9 +204,9 @@ nav a {
   position: relative;
   -webkit-transition: all ease-out 200ms;
   transition: all ease-out 200ms; }
-  nav a:hover {
+  nav a:focus, nav a:hover {
     color: #b3b3b3; }
-    nav a:hover::after {
+    nav a:focus::after, nav a:hover::after {
       width: 100%; }
   nav a:after {
     content: '';
@@ -253,7 +253,8 @@ nav a {
       color: #fff;
       opacity: 1;
       margin: 0; }
-      .menu-list .menu-list__item, .menu-list .menu-list__item a {
+      .menu-list .menu-list__item,
+      .menu-list .menu-list__item a {
         height: 100%;
         width: 100%; }
       .menu-list .menu-list__item a {
@@ -269,14 +270,16 @@ nav a {
         color: unset;
         -webkit-transition: none;
         transition: none; }
-      .menu-list .menu-list__item:hover {
-        background-color: #fff;
-        color: #000; }
+        .menu-list .menu-list__item a:focus {
+          outline-width: thin; }
+        .menu-list .menu-list__item a:focus, .menu-list .menu-list__item a:hover {
+          background-color: #fff;
+          color: #000; }
   nav a {
     display: inline-block; }
-    nav a:hover {
+    nav a:focus, nav a:hover {
       color: #b3b3b3; }
-      nav a:hover::after {
+      nav a:focus::after, nav a:hover::after {
         -webkit-transition-duration: 400ms;
                 transition-duration: 400ms;
         width: 60%;
@@ -284,8 +287,8 @@ nav a {
     nav a:after {
       content: '';
       position: absolute;
-      height: .2em;
-      bottom: .5em;
+      height: 0.2em;
+      bottom: 0.5em;
       border-radius: 2px;
       left: 50%;
       -webkit-transform: translateX(-50%);
