@@ -23,6 +23,7 @@ gulp.task('serve', function() {
     port: 7800,
     browser: "Google Chrome",
     notify: false,
+    logLevel: "debug"
   });
 
   gulp.watch("sass/*", ['sass']);
