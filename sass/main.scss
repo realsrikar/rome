@@ -89,12 +89,23 @@ body {
 }
 
 .navigation-menu__toggle {
+
+  border: none; // these reset browser styles
+  background: none; // these reset browser styles
+  text-align: initial; // these reset browser styles
+  align-items: initial; // these reset browser styles
+  color: inherit; // these reset browser styles
   cursor: pointer;
   height: 30px;
   position: absolute;
   right: -40px;
   top: 5px;
   width: 30px;
+
+  &:focus {
+    outline-width: thin;
+  }
+
 }
 
 .navigation-menu__bars::after,
