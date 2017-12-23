@@ -198,11 +198,16 @@ nav ul {
 
 .body2 {
   height: 700px;
-  background-color: #4CAF50; }
+  background-color: #4CAF50;
+  border-bottom: 300px solid #212121;
+  border-left: 1900px solid transparent; }
 
 .footer {
-  height: 800px;
+  height: 600px;
   background-color: #212121; }
+
+section {
+  height: 100px; }
 
 a {
   color: inherit;

@@ -182,11 +182,19 @@ $black: #212121;
 .body2 {
   height: 700px;
   background-color: $green;
+  border-bottom: 300px solid $black;
+  border-left: 1900px solid transparent; //this may be an issue for screens bigger or smaller than 1920 by 1080 px
 }
 
 .footer {
-  height: 800px;
+  height: 600px;
   background-color: $black;
+}
+section{
+  height:100px;//footer+body2 height
+
+
+
 }
 
 a {
@@ -292,6 +300,10 @@ a {}
     }
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fe188d8133f00015ccf23500dc9fc780d5af534d
   nav {
     a {
       display: inline-block;
