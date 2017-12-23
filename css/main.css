@@ -264,7 +264,6 @@ nav a {
     .menu-list .menu-list__item {
       -webkit-transition: all ease-in-out 200ms;
       transition: all ease-in-out 200ms;
-      color: #fff;
       opacity: 1;
       margin: 0; }
       .menu-list .menu-list__item,
@@ -281,9 +280,9 @@ nav a {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        color: unset;
-        -webkit-transition: none;
-        transition: none; }
+        color: #fff;
+        -webkit-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+        transition: background-color 300ms ease-in-out, color 300ms ease-in-out; }
         .menu-list .menu-list__item a:focus {
           outline-width: thin; }
         .menu-list .menu-list__item a:focus, .menu-list .menu-list__item a:hover {

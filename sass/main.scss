@@ -270,7 +270,6 @@ a {}
 
     .menu-list__item {
       transition: all ease-in-out 200ms;
-      color: #fff;
       opacity: 1;
       margin: 0;
 
@@ -284,8 +283,8 @@ a {}
         display: flex;
         justify-content: center;
         align-items: center;
-        color: unset;
-        transition: none;
+        color: #fff;
+        transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 
         &:focus {
           outline-width: thin;
@@ -299,7 +298,7 @@ a {}
       }
     }
   }
-  
+
   nav {
     a {
       display: inline-block;
