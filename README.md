@@ -5,7 +5,7 @@
 
 1. You need to have npm installed. To get it, install [NodeJS](https://nodejs.org/en/)
 3. Run `npm install`.
-4. Run `npm run gulp`
+4. Run `npm start`
 
 
 
