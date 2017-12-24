@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/realsrikar/rome.git"
   },
-  "author": "",
+  "author": "https://github.com/realsrikar/rome/graphs/contributors",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/realsrikar/rome/issues"
