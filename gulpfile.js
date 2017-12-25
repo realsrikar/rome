@@ -9,7 +9,8 @@ gulp.task('sass', function() {
     .pipe(maps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix({
-      browsers: ['last 2 versions']
+      browsers: ['last 2 versions'],
+      cascade: false
     }))
     .pipe(maps.write('./'))
     .pipe(gulp.dest('css/'))
