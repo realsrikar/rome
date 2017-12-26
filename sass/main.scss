@@ -12,7 +12,6 @@ html {
 }
 
 body {
-  background: url('../img/body-bg.jpg') center center no-repeat;
   background-size: cover;
   color: #fff;
   font-size: 2.4rem;
@@ -183,20 +182,25 @@ $black: #212121;
   height: 700px;
   background-color: $green;
   border-bottom: 300px solid $black;
-  border-left: 1900px solid transparent; //this may be an issue for screens bigger or smaller than 1920 by 1080 px
+  border-left: 1900px solid transparent; //this is an issue for screens bigger or smaller than 1920 by 1080 px
+//Im really not sure how to fix this
 }
+
 
 .footer {
   height: 600px;
   background-color: $black;
 }
-section{
-  height:100px;//footer+body2 height
 
-
+#contactform{
+  width:500px;
+  border: 5px solid #fff;
 
 }
+label{
+  display:block;
 
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -324,26 +328,4 @@ nav {
       }
     }
   }
-}
-//hope my placement of the code is right
-
-.footer {
-  position: relative;
-  width: 100%;
-  height: 400px;
-}
-
-.footer:after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: '';
-  display: block;
-  background: inherit;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  transform-origin: top left;
-  transform: skewY(-10deg);
 }
