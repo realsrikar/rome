@@ -16,11 +16,21 @@
       <span class="navigation-menu__bars"></span>
     </button>
     <ul class="menu-list">
-      <li class="menu-list__item"><a href="">Menu Item 1</a></li>
-      <li class="menu-list__item"><a href="">Menu Item 2</a></li>
-      <li class="menu-list__item"><a href="">Menu Item 3</a></li>
-      <li class="menu-list__item"><a href="">Menu Item 4</a></li>
-      <li class="menu-list__item"><a href="">Menu Item 5</a></li>
+      <li class="menu-list__item">
+        <a href="">Menu Item 1</a>
+      </li>
+      <li class="menu-list__item">
+        <a href="">Menu Item 2</a>
+      </li>
+      <li class="menu-list__item">
+        <a href="">Menu Item 3</a>
+      </li>
+      <li class="menu-list__item">
+        <a href="">Menu Item 4</a>
+      </li>
+      <li class="menu-list__item">
+        <a href="">Menu Item 5</a>
+      </li>
     </ul>
   </nav>
 
@@ -39,23 +49,26 @@
 
   <div class="footer">
 
-        <div id="contactform">
-          <form>
-            <fieldset>
-              <h4> Contact Us! </h4>
-              <label class="lableone" for="name">Name:</label>
-              <input name="name" size="30">
-              <label for="email">Email:</label>
-              <input name="email" size="30">
-              <label for "comments">Comments:</label>
-              <textarea name="comments" rows="7" cols="60"></textarea>
-            </fieldset>
+    <div id="contactform">
+      <form>
+        <fieldset>
+          <h4> Contact Us! </h4>
 
-            <fieldset>
-              <input class="btn" type="submit" valu="Send Email">
-              <input class="btn" type="reset" value="Reset Form">
-            </fieldset>
-        </form>
+          <label class="lableone" for="name">Name:</label>
+          <input name="name" class="information" size="30" id="name">
+
+          <label for="email">Email:</label>
+          <input id="email" class="information" name="email" size="30">
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="7" cols="60"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <input class="btn" type="submit" value="Send Email">
+          <input class="btn" type="reset" value="Reset Form">
+        </fieldset>
+      </form>
 
     </div>
 
