@@ -15,8 +15,8 @@ body {
   background-size: cover;
   color: #fff;
   font-size: 2.4rem;
-  height: 100vh; // this is a problem. Because of this, all other content is technically "overflow". changing height to min-height fixes it but then background-image doesn't work as expected.
-  // overflow: hidden;
+  height: 100vh;
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
 }
