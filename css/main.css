@@ -15,8 +15,14 @@ body {
   font-size: 2.4rem;
   height: 100vh;
   overflow-x: hidden;
-  padding: 0;
   margin: 0; }
+
+label {
+  display: block; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
 
 .navigation-menu__bars,
 .navigation-menu__bars::after,
@@ -188,24 +194,6 @@ body {
 nav ul {
   list-style: none; }
 
-.head {
-  height: 800px;
-  background-color: #3F51B5; }
-
-.body1 {
-  height: 500px;
-  background-color: #FBC02D; }
-
-.body2 {
-  height: 700px;
-  background-color: #4CAF50;
-  border-bottom: 300px solid #212121;
-  border-left: 1900px solid transparent; }
-
-.footer {
-  height: 600px;
-  background-color: #212121; }
-
 nav a {
   display: inline-block;
   position: relative;
@@ -223,10 +211,6 @@ nav a {
     height: 2px;
     width: 0;
     background-color: #b3b3b3; }
-
-.head h1 {
-  margin: 0;
-  text-align: center; }
 
 @media (min-width: 900px) {
   nav + * {
@@ -301,35 +285,55 @@ nav a {
       transform: translateX(-50%);
       background-color: #b3b3b3; } }
 
+.head {
+  height: 800px;
+  background-color: #3F51B5; }
+  .head h1 {
+    margin: 0;
+    text-align: center; }
+
+.body1 {
+  height: 500px;
+  background-color: #FBC02D; }
+
+.body2 {
+  height: 700px;
+  background-color: #4CAF50;
+  border-bottom: 300px solid #212121;
+  border-left: 1900px solid transparent; }
+
+.body2 {
+  height: 700px;
+  background-color: #4CAF50;
+  border-bottom: 300px solid #212121;
+  border-left: 1900px solid transparent; }
+
+.footer {
+  height: 600px;
+  background-color: #212121; }
+
 #contactform {
   width: 500px;
   border: 5px solid #fff; }
 
-label {
-  display: block; }
-
-a {
-  color: inherit;
-  text-decoration: none; }
-
-form {
+#contactform {
   padding: 1em; }
-  form textarea {
+  #contactform textarea {
     padding: .4em;
     width: 400px;
     resize: vertical;
     margin: 0; }
-  form textarea,
-  form .information {
+  #contactform textarea,
+  #contactform .information {
     border: 2px solid #d6d6d6; }
-  form label {
+  #contactform label {
     font-size: 2rem; }
-  form .information {
+  #contactform .information {
     margin-bottom: 1rem; }
-  form h4 {
+  #contactform h4 {
     text-align: center;
     margin: 1rem auto .5rem; }
-  form fieldset {
+  #contactform fieldset {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     -webkit-padding-before: 0;

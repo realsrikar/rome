@@ -1,0 +1,42 @@
+#contactform {
+  width: 500px;
+  border: 5px solid #fff;
+}
+
+#contactform {
+  padding: 1em;
+
+  textarea {
+    padding: .4em;
+    width: 400px;
+    resize: vertical;
+    margin: 0;
+  }
+  
+  textarea,
+  .information {
+    border: 2px solid #d6d6d6;
+  }
+  
+  label {
+    font-size: 2rem;
+  }
+
+  .information {
+    margin-bottom: 1rem;
+  }
+  h4 {
+    text-align: center;
+    margin: 1rem auto .5rem;
+  }
+
+  fieldset {
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    -webkit-padding-after: 0;
+    border: none;
+  }
+}

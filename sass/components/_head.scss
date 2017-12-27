@@ -1,0 +1,9 @@
+.head {
+  height: 800px;
+  background-color: $blue; // anything following a dollar $ is a sass variable
+  
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+}

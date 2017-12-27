@@ -1,0 +1,243 @@
+.navigation-menu__bars,
+.navigation-menu__bars::after,
+.navigation-menu__bars::before {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 25px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  transition: all 0.3s;
+}
+
+.navigation-menu {
+  background-color: transparent;
+  height: 100%;
+  position: fixed;
+  width: 600px;
+  transform: translateX(-100%);
+  transition: transform 0.3s 0.3s;
+}
+
+.navigation-menu::before {
+  background: #000000;
+  content: '';
+  height: 400%;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 100%;
+  z-index: 0;
+}
+
+.navigation-menu--open {
+  transform: translateX(0);
+}
+
+.navigation-menu--open .navigation-menu__bars {
+  background-color: transparent;
+}
+
+.navigation-menu--open .navigation-menu__bars::after,
+.navigation-menu--open .navigation-menu__bars::before {
+  top: 0;
+}
+
+.navigation-menu--open .navigation-menu__bars::before {
+  transform: rotate(45deg);
+}
+
+.navigation-menu--open .navigation-menu__bars::after {
+  transform: rotate(-45deg);
+}
+
+.navigation-menu--open .menu-list__item {
+  opacity: 1;
+}
+
+@for $i from 1 through 12 {
+  .navigation-menu--open .menu-list__item:nth-child(#{$i}) {
+    transition-delay: 0.33s + 0.25 * ($i - 1);
+  }
+}
+
+.navigation-menu__toggle {
+  border: none; // these reset browser styles
+  background: none; // these reset browser styles
+  text-align: initial; // these reset browser styles
+  align-items: initial; // these reset browser styles
+  color: inherit; // these reset browser styles
+  cursor: pointer;
+  height: 30px;
+  position: absolute;
+  right: -40px;
+  top: 5px;
+  width: 30px;
+  &:focus {
+    outline-width: thin;
+  }
+}
+
+.navigation-menu__bars::after,
+.navigation-menu__bars::before {
+  content: '';
+}
+
+.navigation-menu__bars::before {
+  left: 0;
+  top: -8px;
+}
+
+.navigation-menu__bars::after {
+  left: 0;
+  top: 8px;
+}
+
+.menu-list {
+  padding: 60px 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.menu-list__item {
+  margin: 40px 0;
+  opacity: 0;
+  transition: opacity 0.5s 0.5s;
+}
+
+@media only screen and (max-width: 700px) {
+  .head h1 {
+    padding-top: 2em;
+  }
+  .navigation-menu {
+    min-width: 240px;
+    width: 80%;
+  }
+  .navigation-menu::before {
+    width: 110%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navigation-menu {
+    background-color: #111;
+    min-width: 240px;
+    width: 80%;
+  }
+  .navigation-menu::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+nav ul {
+  list-style: none;
+}
+
+$nav-link-color: darken(#fff, 30%);
+nav {
+  a {
+    display: inline-block;
+    position: relative;
+    transition: all ease-out 200ms;
+    &:focus,
+    &:hover {
+      color: $nav-link-color; // darken is a sass function
+      &::after {
+        width: 100%;
+      }
+    }
+    &:after {
+      content: '';
+      display: block;
+      transition: all ease-out 200ms;
+      height: 2px;
+      width: 0;
+      background-color: $nav-link-color;
+    }
+  }
+}
+
+
+// nav on desktop
+
+
+@media (min-width: 900px) {
+  nav+* {
+    margin-top: 100px;
+  }
+  .navigation-menu {
+    background-color: #000;
+    top: 0;
+    transform: initial;
+    transition: none;
+    z-index: 100;
+    height: 100px;
+    width: 100vw;
+    &::before {
+      content: initial;
+    }
+  }
+  .navigation-menu__toggle.js-nav-menu-toggle {
+    display: none;
+  }
+  .menu-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    .menu-list__item {
+      transition: all ease-in-out 200ms;
+      opacity: 1;
+      margin: 0;
+      &,
+      a {
+        height: 100%;
+        width: 100%;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+        &:focus {
+          outline-width: thin;
+        }
+        &:focus,
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
+      }
+    }
+  }
+  nav {
+    a {
+      display: inline-block;
+      &:focus,
+      &:hover {
+        color: $nav-link-color;
+        &::after {
+          transition-duration: 400ms;
+          width: 60%;
+          max-width: 6em;
+        }
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        height: 0.2em;
+        bottom: 0.5em;
+        border-radius: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $nav-link-color;
+      }
+    }
+  }
+}

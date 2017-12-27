@@ -5,7 +5,7 @@ const browserSync = require('browser-sync').create();
 const maps = require('gulp-sourcemaps');
 
 gulp.task('sass', function() {
-  return gulp.src('sass/*')
+  return gulp.src('sass/*.scss')
     .pipe(maps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix({
@@ -29,7 +29,7 @@ gulp.task('serve', function() {
     logLevel: "debug"
   });
 
-  gulp.watch("sass/*", ['sass']);
+  gulp.watch("sass/**/*.scss", ['sass']);
   gulp.watch("*.html").on('change', browserSync.reload);
 });
 
