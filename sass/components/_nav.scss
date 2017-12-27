@@ -59,6 +59,13 @@
   opacity: 1;
 }
 
+nav {
+  ul,
+  ul li {
+    width: fit-content;
+  }
+}
+
 @for $i from 1 through 12 {
   .navigation-menu--open .menu-list__item:nth-child(#{$i}) {
     transition-delay: 0.33s + 0.25 * ($i - 1);
@@ -142,7 +149,8 @@ nav {
   a {
     display: inline-block;
     position: relative;
-    transition: all ease-out 200ms;
+    padding: .125em;
+    transition: color ease-out 200ms;
     &:focus,
     &:hover {
       color: $nav-link-color; // darken is a sass function
@@ -153,7 +161,7 @@ nav {
     &:after {
       content: '';
       display: block;
-      transition: all ease-out 200ms;
+      transition: width ease-out 200ms;
       height: 2px;
       width: 0;
       background-color: $nav-link-color;
@@ -161,10 +169,7 @@ nav {
   }
 }
 
-
 // nav on desktop
-
-
 @media (min-width: 900px) {
   nav+* {
     margin-top: 100px;
