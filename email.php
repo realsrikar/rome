@@ -10,11 +10,11 @@ $email=$_Post['email'];
 $comments=$_Post['comments'];
 
 $mailto="YOUREMAIL@somethingsomewhere.com";//enter your email here to test
-$headers="From:" .$email
+$headers="From:" .$email;
 $txt="You have recieved an email from " .$name;
-$subject="New Message"
+$subject="New Message";
 
-$emailform=mail ($to, $subject, $comments, "From: " . $name .);
+$emailform=mail ($to, $subject, $comments, "From: " . $name);
 
 if($emailform){
 echo "Thank You For Your Input";
