@@ -6,8 +6,13 @@
   box-sizing: border-box; }
 
 html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
   font-size: 62.5%;
-  font-family: "Lato", sans-serif; }
+  width: 100vw;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden; }
 
 body {
   background-size: cover;
@@ -303,25 +308,19 @@ nav a {
   border-bottom: 300px solid #212121;
   border-left: 1900px solid transparent; }
 
-.body2 {
-  height: 700px;
-  background-color: #4CAF50;
-  border-bottom: 300px solid #212121;
-  border-left: 1900px solid transparent; }
-
 .footer {
   height: 600px;
   background-color: #212121; }
 
 #contactform {
   width: 500px;
-  border: 5px solid #fff; }
-
-#contactform {
-  padding: 1em; }
+  border: 5px solid #fff;
+  padding: 1em;
+  max-width: 100%; }
   #contactform textarea {
     padding: .4em;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     resize: vertical;
     margin: 0; }
   #contactform textarea,
