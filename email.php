@@ -8,8 +8,7 @@ $headers .= "X-Mailer: PHP v".phpversion()."\r\n";
 $name=$_Post['name'];
 $email=$_Post['email'];
 $comments=$_Post['comments'];
-
-$mailto="YOUREMAIL@somethingsomewhere.com";//enter your email here to test
+$to="rod_rahmjoo@yahoo.com";
 $headers="From:" .$email;
 $txt="You have recieved an email from " .$name;
 $subject="New Message";

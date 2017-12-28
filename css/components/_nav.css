@@ -1,29 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400);
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-html {
-  font-size: 62.5%;
-  font-family: "Lato", sans-serif; }
-
-body {
-  background-size: cover;
-  color: #fff;
-  font-size: 2.4rem;
-  height: 100vh;
-  overflow-x: hidden;
-  margin: 0; }
-
-label {
-  display: block; }
-
-a {
-  color: inherit;
-  text-decoration: none; }
-
 .navigation-menu__bars,
 .navigation-menu__bars::after,
 .navigation-menu__bars::before {
@@ -84,6 +58,12 @@ a {
 
 .navigation-menu--open .menu-list__item {
   opacity: 1; }
+
+nav ul,
+nav ul li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
 
 .navigation-menu--open .menu-list__item:nth-child(1) {
   -webkit-transition-delay: 0.33s;
@@ -285,62 +265,3 @@ nav a {
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
       background-color: #b3b3b3; } }
-
-.head {
-  height: 800px;
-  background-color: #3F51B5; }
-  .head h1 {
-    margin: 0;
-    text-align: center; }
-
-.body1 {
-  height: 500px;
-  background-color: #FBC02D; }
-
-.body2 {
-  height: 700px;
-  background-color: #4CAF50;
-  border-bottom: 300px solid #212121;
-  border-left: 1900px solid transparent; }
-
-.body2 {
-  height: 700px;
-  background-color: #4CAF50;
-  border-bottom: 300px solid #212121;
-  border-left: 1900px solid transparent; }
-
-.footer {
-  height: 600px;
-  background-color: #212121; }
-
-#contactform {
-  width: 500px;
-  border: 5px solid #fff; }
-
-#contactform {
-  padding: 1em; }
-  #contactform textarea {
-    padding: .4em;
-    width: 400px;
-    resize: vertical;
-    margin: 0; }
-  #contactform textarea,
-  #contactform .information {
-    border: 2px solid #d6d6d6; }
-  #contactform label {
-    font-size: 2rem; }
-  #contactform .information {
-    margin-bottom: 1rem; }
-  #contactform h4 {
-    text-align: center;
-    margin: 1rem auto .5rem; }
-  #contactform fieldset {
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-before: 0;
-    -webkit-padding-start: 0;
-    -webkit-padding-end: 0;
-    -webkit-padding-after: 0;
-    border: none; }
-
-/*# sourceMappingURL=main.css.map */
