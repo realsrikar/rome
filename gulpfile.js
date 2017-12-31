@@ -30,6 +30,7 @@ gulp.task('serve', function() {
   });
 
   gulp.watch("sass/**/*.scss", ['sass']);
+  gulp.watch("js/**/*.js").on('change', browserSync.reload);
   gulp.watch("*.html").on('change', browserSync.reload);
 });
 
