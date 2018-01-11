@@ -323,11 +323,18 @@ nav a {
     max-width: 400px;
     resize: vertical;
     margin: 0; }
+  #contactform label,
+  #contactform input {
+    display: block; }
   #contactform textarea,
   #contactform .information {
     border: 2px solid #d6d6d6; }
   #contactform label {
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin-top: .25em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
   #contactform .information {
     margin-bottom: 1rem; }
   #contactform h4 {
@@ -341,5 +348,9 @@ nav a {
     -webkit-padding-end: 0;
     -webkit-padding-after: 0;
     border: none; }
+  #contactform .form-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 /*# sourceMappingURL=main.css.map */

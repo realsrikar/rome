@@ -12,6 +12,11 @@
     margin: 0;
   }
 
+  label,
+  input {
+    display: block;
+  }
+
   textarea,
   .information {
     border: 2px solid #d6d6d6;
@@ -19,6 +24,8 @@
 
   label {
     font-size: 2rem;
+    margin-top: .25em;
+    width: fit-content;
   }
 
   .information {
@@ -37,5 +44,9 @@
     -webkit-padding-end: 0;
     -webkit-padding-after: 0;
     border: none;
+  }
+
+  .form-btn {
+    display: flex; // this is not working for some reason. I expected it to 'float' the buttons
   }
 }
