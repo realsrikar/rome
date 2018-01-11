@@ -5,3 +5,4 @@
 
 ## Bugs
 - display: flex doesn't float the buttons in Chrome
+	- Only affects `fieldset` elements
