@@ -47,6 +47,6 @@
   }
 
   .form-btn {
-    display: flex; // this is not working for some reason. I expected it to 'float' the buttons
+    display: flex; // bug with chrome -- refer to /TODO.md
   }
 }
