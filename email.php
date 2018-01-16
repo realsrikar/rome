@@ -6,9 +6,9 @@ $headers .= "X-Mailer: PHP v".phpversion()."\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 
-$name=$_Post['name'];
-$email=$_Post['email'];
-$comments=$_Post['comments'];
+$name=$_POST['name'];
+$email=$_POST['email'];
+$comments=$_POST['comments'];
 $to="romanthemes@gmail.com";
 $headers.="From: " .$email;
 $txt="You have recieved an email from " .$name;
