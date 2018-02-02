@@ -15,6 +15,7 @@ $txt="You have recieved an email from " .$name;
 $subject="New Message";
 
 $emailform = @mail($to, $subject, $comments, $headers);
+// added the "@" before "mail"
 
 if($emailform){
 echo "Thank You For Your Input";
