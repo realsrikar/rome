@@ -11,6 +11,7 @@
   top: 50%;
   display: block;
   transition: all 0.3s;
+  will-change: transform; // this will allow the page to not re-render
 }
 
 .navigation-menu {
@@ -59,11 +60,9 @@
   opacity: 1;
 }
 
-nav {
-  ul,
-  ul li {
-
-  }
+.menu-list__item {
+    width: fit-content;
+    display: block;
 }
 
 @for $i from 1 through 12 {

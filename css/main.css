@@ -42,7 +42,8 @@ a {
   top: 50%;
   display: block;
   -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  will-change: transform; }
 
 .navigation-menu {
   background-color: transparent;
@@ -89,6 +90,12 @@ a {
 
 .navigation-menu--open .menu-list__item {
   opacity: 1; }
+
+.menu-list__item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block; }
 
 .navigation-menu--open .menu-list__item:nth-child(1) {
   -webkit-transition-delay: 0.33s;
